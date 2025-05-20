@@ -63,7 +63,7 @@ export class QuickbookController {
       const authcode=urlParams.get("code")as string;
       if(!authcode){
         return res.status(400).send("No token assigned for callback");
-      }
+      }          
       try{
         console.log("entry in callback try")
         const tokenResponse ={
